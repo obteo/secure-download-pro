@@ -1,0 +1,31 @@
+/* Lime-green full-width responsive download button */
+.download-btn{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  width:100%;
+  min-height:56px;
+  background:#32CD32; /* lime green */
+  color:#fff;
+  font-size:18px;
+  font-weight:700;
+  padding:16px 20px;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  text-decoration:none;
+  transition:background-color .25s ease, transform .12s ease;
+  line-height:1.2;
+  box-sizing:border-box;
+}
+.download-btn:hover,
+.download-btn:focus{
+  background:#28a428;
+  transform:translateY(-1px);
+  outline:none;
+}
+.download-btn i.fa{font-size:20px}
+@media (max-width:600px){
+  .download-btn{font-size:16px; padding:14px 16px; min-height:50px;}
+}
